@@ -10,7 +10,7 @@ permalink: /ja/skill-catalog/
 # スキル一覧
 {: .no_toc }
 
-全74個のClaude Trading Skillsをカテゴリ別に紹介します。各スキルのAPI要件バッジで、利用に必要な外部サービスをすぐに確認できます。
+全75個のClaude Trading Skillsをカテゴリ別に紹介します。各スキルのAPI要件バッジで、利用に必要な外部サービスをすぐに確認できます。
 {: .fs-6 .fw-300 }
 
 > 検索は英語スキル名（"CANSLIM", "VCP", "FinViz"等）での検索を推奨します。日本語の部分一致検索は制限があります。
@@ -101,6 +101,7 @@ permalink: /ja/skill-catalog/
 | `skill-idea-miner` | `internal_component` | — |
 | `skill-integration-tester` | `standalone` | Validates selected skill handoffs directly as a repository maintenance tool. |
 | `stanley-druckenmiller-investment` | `workflow_step` | — |
+| `stock-outlook-analyzer` | `standalone` | Self-contained single-ticker outlook: gathers Webull data, computes ranges, tilt and backtest, and keeps its own forecast log. |
 | `stockbee-20pct-study` | `workflow_step` | — |
 | `stockbee-episodic-pivot-analyzer` | `workflow_step` | — |
 | `stockbee-exhaustion-hammer-screener` | `workflow_step` | — |
@@ -176,6 +177,7 @@ permalink: /ja/skill-catalog/
 | **[manifoldbt Backtester]({{ '/ja/skills/manifoldbt-backtester/' | relative_url }})** | Runs a declarative strategy spec over OHLCV bars with the manifoldbt Rust engine and emits the eight inputs backtest-expert scores _(EN, awaiting translation)_ | <span class="badge badge-free">API不要</span> |
 | **[MT5 Robot Tester]({{ '/ja/skills/mt5-robot-tester/' | relative_url }})** | ローカルのMetaTrader 5 EAを再開可能な3ラウンドで一括検証し、上書きを防ぐファイル処理、決定論的ゲート、実行間学習を提供。Windows、MT5、EAファイル、ブローカーのtick dataが必要 | <span class="badge badge-free">API不要</span> |
 | **[Stockbee 20% Study]({{ '/ja/skills/stockbee-20pct-study/' | relative_url }})** | +20% / -20% mover のモデルブックを日次で作成し、カタリスト、チャート文脈、将来リターン、コホート傾向を研究用に整理。売買シグナルではなく仮説作成専用 | <span class="badge badge-api">FMP必須</span> <span class="badge badge-optional">ローカルJSON任意</span> |
+| **[Stock Outlook Analyzer]({{ '/ja/skills/stock-outlook-analyzer/' | relative_url }})** | 1銘柄の1日〜6ヶ月の見通し。オプションのインプライド・ボラティリティから68%/95%の価格レンジ、上限付きの方向性傾き、強気・基本・弱気シナリオと判定水準、単純ルールとのバックテスト比較、自己採点する予測ログを提供。価格予想サービスではありません | <span class="badge badge-free">API不要</span> <span class="badge badge-optional">Webull MCP推奨</span> |
 | **Options Strategy Advisor** | Black-Scholesモデルで理論価格・グリークス算出。17以上のオプション戦略を教育的に解説 | <span class="badge badge-optional">FMP任意</span> |
 | **Pair Trade Screener** | 共和分検定でペアトレード機会を検出。ヘッジ比率、半減期、z-scoreシグナルを算出 | <span class="badge badge-api">FMP必須</span> |
 | **Stanley Druckenmiller Investment** | ドラッケンミラーの投資哲学をエンコード。マクロポジショニング、非対称リスク/リターン評価 | <span class="badge badge-free">API不要</span> |
@@ -357,6 +359,7 @@ permalink: /ja/skill-catalog/
 | Skill Idea Miner | - | - | - |
 | Skill Integration Tester | - | - | - |
 | Stanley Druckenmiller Investment | - | - | - |
+| Stock Outlook Analyzer | - | - | - |
 | Stockbee 20% Study | 必須 | - | - |
 | Stockbee Episodic Pivot Analyzer | 任意 | - | - |
 | Stockbee Exhaustion Hammer Screener | 必須 | - | - |

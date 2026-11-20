@@ -10,7 +10,7 @@ permalink: /en/skill-catalog/
 # Skill Catalog
 {: .no_toc }
 
-A comprehensive catalog of all 74 Claude Trading Skills organized by category. Badge indicators show API requirements at a glance.
+A comprehensive catalog of all 75 Claude Trading Skills organized by category. Badge indicators show API requirements at a glance.
 {: .fs-6 .fw-300 }
 
 > Use English skill names ("CANSLIM", "VCP", "FinViz", etc.) for best search results on this page.
@@ -101,6 +101,7 @@ A comprehensive catalog of all 74 Claude Trading Skills organized by category. B
 | `skill-idea-miner` | `internal_component` | — |
 | `skill-integration-tester` | `standalone` | Validates selected skill handoffs directly as a repository maintenance tool. |
 | `stanley-druckenmiller-investment` | `workflow_step` | — |
+| `stock-outlook-analyzer` | `standalone` | Self-contained single-ticker outlook: gathers Webull data, computes ranges, tilt and backtest, and keeps its own forecast log. |
 | `stockbee-20pct-study` | `workflow_step` | — |
 | `stockbee-episodic-pivot-analyzer` | `workflow_step` | — |
 | `stockbee-exhaustion-hammer-screener` | `workflow_step` | — |
@@ -176,6 +177,7 @@ A comprehensive catalog of all 74 Claude Trading Skills organized by category. B
 | **[manifoldbt Backtester]({{ '/en/skills/manifoldbt-backtester/' | relative_url }})** | Runs a declarative strategy spec over OHLCV bars with the manifoldbt Rust engine and emits the eight inputs backtest-expert scores | <span class="badge badge-free">No API</span> |
 | **[MT5 Robot Tester]({{ '/en/skills/mt5-robot-tester/' | relative_url }})** | Batch-tests local MetaTrader 5 Expert Advisors through a resumable three-round pipeline with fail-closed file handling, deterministic gates, and cross-run learnings. Requires Windows, MT5, EA files, and broker tick data | <span class="badge badge-free">No API</span> |
 | **[Stockbee 20% Study]({{ '/en/skills/stockbee-20pct-study/' | relative_url }})** | Builds a daily +20%/-20% mover model book, classifies catalyst and chart context, updates forward outcomes, and mines cohorts for research prompts. Study workflow only — not a buy/sell signal service | <span class="badge badge-api">FMP Required</span> <span class="badge badge-optional">Local JSON Optional</span> |
+| **[Stock Outlook Analyzer]({{ '/en/skills/stock-outlook-analyzer/' | relative_url }})** | Multi-horizon outlook for one stock (1 day to 6 months): 68%/95% price ranges from options implied volatility, a capped evidence-based tilt, bull/base/bear triggers, a backtest against naive rules, and a self-scoring forecast log. Not a price prediction service | <span class="badge badge-free">No API</span> <span class="badge badge-optional">Webull MCP Recommended</span> |
 | **Options Strategy Advisor** | Educational options tool using Black-Scholes pricing. Calculates Greeks (Delta, Gamma, Theta, Vega, Rho), supports 17+ strategies, P/L simulation | <span class="badge badge-optional">FMP Optional</span> |
 | **Pair Trade Screener** | Statistical arbitrage via cointegration testing. Calculates hedge ratios, mean-reversion speed (half-life), and z-score entry/exit signals | <span class="badge badge-api">FMP Required</span> |
 | **Stanley Druckenmiller Investment** | Encodes Druckenmiller's macro positioning philosophy: liquidity analysis, asymmetric risk/reward, conviction sizing, and loss-cutting discipline | <span class="badge badge-free">No API</span> |
@@ -274,6 +276,7 @@ A comprehensive catalog of all 74 Claude Trading Skills organized by category. B
 
 - **[US Stock Analysis]({{ '/en/skills/us-stock-analysis/' | relative_url }})** -- Full fundamental and technical research report
 - **Technical Analyst** -- Pure chart-based analysis with pattern identification
+- **[Stock Outlook Analyzer]({{ '/en/skills/stock-outlook-analyzer/' | relative_url }})** -- Probability ranges and evidence for the next day to six months, with its own track record
 
 ### I want to manage my portfolio
 
@@ -360,6 +363,7 @@ A comprehensive catalog of all 74 Claude Trading Skills organized by category. B
 | Skill Idea Miner | -- | -- | -- |
 | Skill Integration Tester | -- | -- | -- |
 | Stanley Druckenmiller Investment | -- | -- | -- |
+| Stock Outlook Analyzer | -- | -- | -- |
 | Stockbee 20% Study | Required | -- | -- |
 | Stockbee Episodic Pivot Analyzer | Optional | -- | -- |
 | Stockbee Exhaustion Hammer Screener | Required | -- | -- |

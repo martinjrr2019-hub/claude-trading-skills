@@ -134,6 +134,7 @@ testpaths = [
     "skills/skill-idea-miner/scripts/tests",
     "skills/skill-integration-tester/scripts/tests",
     "skills/stanley-druckenmiller-investment/scripts/tests",
+    "skills/stock-outlook-analyzer/scripts/tests",
     "skills/stockbee-20pct-study/scripts/tests",
     "skills/stockbee-episodic-pivot-analyzer/scripts/tests",
     "skills/stockbee-exhaustion-hammer-screener/scripts/tests",

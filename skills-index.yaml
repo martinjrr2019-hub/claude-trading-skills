@@ -1748,6 +1748,35 @@ skills:
   - druckenmiller_synthesis_report
   workflows:
   - multi-asset-opportunity-daily
+- id: stock-outlook-analyzer
+  display_name: Stock Outlook Analyzer
+  category: strategy-research
+  status: beta
+  operational_role:
+    type: standalone
+    rationale: "Self-contained single-ticker outlook: gathers Webull data, computes ranges, tilt and backtest, and keeps its own forecast log."
+  summary: Multi-horizon probability ranges, capped directional tilt, backtest and self-scored forecast log for one stock.
+  timeframe: research
+  difficulty: intermediate
+  integrations:
+  - id: webull
+    type: mcp
+    requirement: recommended
+    note: Webull MCP for quotes, bars, option IV, analyst ratings, earnings and news; any source in the same JSON format works
+  - id: local_calculation
+    type: calculation
+    requirement: not_required
+    note: Engine is standard-library Python and runs offline on a saved input file
+  inputs:
+  - ticker
+  - stock_data
+  - option_implied_volatility
+  outputs:
+  - probability_ranges
+  - directional_tilt
+  - backtest
+  - forecast_log
+  workflows: []
 - id: stockbee-20pct-study
   display_name: Stockbee 20% Study
   category: strategy-research

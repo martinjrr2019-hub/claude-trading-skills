@@ -1118,6 +1118,31 @@
     },
     {
       "category": "strategy-research",
+      "difficulty": "intermediate",
+      "display_name": "Stock Outlook Analyzer",
+      "id": "stock-outlook-analyzer",
+      "integrations": [
+        {
+          "id": "webull",
+          "requirement": "recommended",
+          "type": "mcp"
+        },
+        {
+          "id": "local_calculation",
+          "requirement": "not_required",
+          "type": "calculation"
+        }
+      ],
+      "operational_role": {
+        "rationale": "Self-contained single-ticker outlook: gathers Webull data, computes ranges, tilt and backtest, and keeps its own forecast log.",
+        "type": "standalone"
+      },
+      "status": "beta",
+      "summary": "Multi-horizon probability ranges, capped directional tilt, backtest and self-scored forecast log for one stock.",
+      "timeframe": "research"
+    },
+    {
+      "category": "strategy-research",
       "difficulty": "advanced",
       "display_name": "Stockbee 20% Study",
       "id": "stockbee-20pct-study",
